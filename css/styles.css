@@ -59,25 +59,29 @@ table {
 }
 
 .container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
+  border: 1px solid black;
 }
 
 .pic {
   background-image: url(./assets/images/homepage/isai-ramos-A6WQ57dzHgU-unsplash\ 1.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  color: #06348C;
 }
 
 .logo {
+  display: flex;
+  margin-bottom: 5%;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 2%;
-  margin-bottom: 7%;
 }
 .logo h1 {
   font-size: 50px;
   position: relative;
   display: inline-block;
-  border: 1px solid white;
 }
 .logo h1:after {
   content: " ";
@@ -88,16 +92,152 @@ table {
   margin-left: 1%;
 }
 .logo ul {
-  float: right;
-  border: 1px solid white;
-  width: 75%;
+  display: flex;
+  gap: 125px;
+}
+
+.logotext {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 5%;
+  word-spacing: 10px;
+}
+
+form {
+  margin-left: 12.5%;
+}
+form input {
+  display: inline-block;
+  padding: 1%;
+  width: 40%;
+  border: 3px solid #F2B30F;
+  margin-bottom: 15%;
+}
+form .join {
+  border-left: none;
+}
+
+.headerfoot {
+  background-color: rgba(39, 100, 126, 0.1);
+  color: #06348C;
+}
+.headerfoot .headfoot {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+  padding-top: 2%;
+  margin: 0 auto;
+}
+.headerfoot .headfoot span {
+  display: block;
+  margin-bottom: 20%;
+  font-size: 35px;
+}
+
+/*================================================================
+Main body*/
+.maintext, .facilitiestxt {
+  color: #06348C;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.maintext h1, .facilitiestxt h1 {
+  font-size: 35px;
+  padding-top: 2%;
+  margin-bottom: 2%;
+}
+
+/*================================================================
+reuseable layouts*/
+.col-1-3 {
+  width: 28.9%;
+}
+
+.col-1-2 {
+  width: 45.3%;
+}
+
+.details {
+  margin-top: -1%;
+  border: 2px solid #F2B30F;
+  border-top: none;
+  padding: 0 4% 4% 2%;
+  line-height: 30px;
+}
+.details .detailhead {
+  display: flex;
+  justify-content: space-between;
+}
+.details .detailhead h3 {
+  color: #06348C;
+  font-weight: 500;
+}
+
+.suitename {
+  border: 2px solid #F2B30F;
+  border-top: none;
+  margin: -1% 0 10% 0;
+  padding: 5% 5% 5% 5%;
+  text-align: center;
+}
+
+/*================================================================
+room style*/
+.rooms {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.roomsect {
+  margin-bottom: 2%;
+}
+
+.suite {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*================================================================
+buttons*/
+.btn {
+  display: inline-block;
+  margin-left: 45%;
+  border: 1px solid #234B9A;
+  border-radius: 10px;
+  padding: 15px;
+  width: 15%;
+  text-align: center;
+  background-color: #234B9A;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*================================================================
+Facilities*/
+.facilitiestxt {
   margin-top: 1%;
 }
-.logo li {
-  display: inline-block;
-  border: 1px solid white;
-  margin-right: 14.1%;
+
+.facilities {
+  display: flex;
+  justify-content: space-between;
 }
-.logo li:nth-child(6) {
-  margin-right: 0;
+.facilities img {
+  width: 100%;
+}
+.facilities .status {
+  background-color: #37A335;
+  color: #fff;
+  border-radius: 20%;
+}
+.facilities .details {
+  height: 16%;
+  padding: 2% 2% 0 30%;
+}
+.facilities h3 {
+  font-size: 18px;
 }/*# sourceMappingURL=styles.css.map */
