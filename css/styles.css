@@ -103,17 +103,17 @@ table {
   word-spacing: 10px;
 }
 
-form {
+.logoform {
   margin-left: 12.5%;
 }
-form input {
+.logoform input {
   display: inline-block;
   padding: 1%;
   width: 40%;
   border: 3px solid #F2B30F;
   margin-bottom: 15%;
 }
-form .join {
+.logoform .join {
   border-left: none;
 }
 
@@ -163,6 +163,10 @@ reuseable layouts*/
   border-top: none;
   padding: 0 4% 4% 2%;
   line-height: 30px;
+  width: 100%;
+}
+.details img {
+  width: 100%;
 }
 .details .detailhead {
   display: flex;
@@ -171,14 +175,6 @@ reuseable layouts*/
 .details .detailhead h3 {
   color: #06348C;
   font-weight: 500;
-}
-
-.suitename {
-  border: 2px solid #F2B30F;
-  border-top: none;
-  margin: -1% 0 10% 0;
-  padding: 5% 5% 5% 5%;
-  text-align: center;
 }
 
 /*================================================================
@@ -193,12 +189,26 @@ room style*/
   margin-bottom: 2%;
 }
 
+/*================================================================
+suite style*/
 .suite {
   width: 65%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.suite img {
+  width: 100%;
+}
+
+.suitename {
+  border: 2px solid #F2B30F;
+  border-top: none;
+  margin: -1% 0 10% 0;
+  padding: 5% 5% 5% 5%;
+  text-align: center;
+  width: 100%;
 }
 
 /*================================================================
@@ -225,6 +235,7 @@ Facilities*/
 .facilities {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2%;
 }
 .facilities img {
   width: 100%;
@@ -235,9 +246,52 @@ Facilities*/
   border-radius: 20%;
 }
 .facilities .details {
+  width: 100%;
   height: 16%;
-  padding: 2% 2% 0 30%;
+  padding: 0 4% 4% 2%;
+  margin-bottom: 5%;
 }
 .facilities h3 {
   font-size: 18px;
+}
+
+/*=============================================================
+Map and Contacts==============================*/
+.backgrd {
+  background-color: rgba(39, 100, 126, 0.1);
+}
+.backgrd .map {
+  display: flex;
+}
+.backgrd .contact {
+  padding: 10% 10% 10% 10%;
+}
+.backgrd .contact h3 {
+  color: #234B9A;
+  font-size: 40px;
+  margin-bottom: 20%;
+}
+.backgrd .contact li {
+  font-size: 30px;
+  margin-bottom: 10%;
+}
+.backgrd .contact li:nth-child(4) {
+  margin-bottom: 14%;
+}
+
+/*=============================================================
+subscribe ==============================*/
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe h3 {
+  margin-top: 4%;
+  margin-bottom: 2%;
+  color: #06348C;
+  font-size: 24px;
+}
+.subscribe input {
+  padding: 10% 10%;
 }/*# sourceMappingURL=styles.css.map */
